@@ -62,28 +62,18 @@ for (let i = 0; i < searchBoxElems.length; i++) {
 }
 
 
-function book(){
- 
-function sendToWhatsApp(event) {
-  event.preventDefault();
-
-  const name = document.querySelector('input[name="full_name"]').value;
-  const email = document.querySelector('input[name="email_address"]').value;
-  const persons = document.querySelector('select[name="total_person"]').value;
-  const date = document.querySelector('input[name="booking_date"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
-
-  const whatsappMessage = `Hello! I would like to book a table. Here are my details:%0A
-  - Name: ${name}%0A
-  - Email: ${email}%0A
-  - Total Persons: ${persons}%0A
-  - Date: ${date}%0A
-  - Message: ${message}`;
-
-  const whatsappUrl = `https://wa.me/08092848216?text=${whatsappMessage}`;
-
-  window.open(whatsappUrl, '_blank');
-}
+  function redirectToWhatsAppBusiness() {
+            const name = document.getElementById("full_name").value;
+            const email = document.getElementById("email_address").value;
+            const persons = document.getElementById("total_person").value;
+            const date = document.getElementById("booking_date").value;
+            const message = document.getElementById("message").value;
+        
+            const whatsappMessage = `Hello, I would like to book a table.\n\nName: ${name}\nEmail: ${email}\nPersons: ${persons}\nDate: ${date}\nMessage: ${message}`;
+            const whatsappURL = `https://wa.me/2348092848216?text=${encodeURIComponent(whatsappMessage)}`;
+        
+            window.open(whatsappURL, "_blank");
+          }
 
 /**
  * move cycle on scroll

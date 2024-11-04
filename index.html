@@ -68,7 +68,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+            <a href="https://wa.me/+2348092848216?text=Hello%20I%20would%20like%20to%20book%20a%20table" class="navbar-link" data-nav-link>Contact Us</a>
           </li>
 
         </ul>
@@ -136,7 +136,8 @@
 
             <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
 
-            <button class="btn">Book A Table</button>
+            <button class="btn" onclick="window.open('https://wa.me/+2348092848216?text=Hello%20I%20would%20like%20to%20book%20a%20table', '_blank')">Book A Table</button>
+
 
           </div>
 
@@ -448,7 +449,7 @@
 
                   <div class="badge">-15%</div>
 
-                  <button class="btn food-menu-btn">Order Now</button>
+                  <!-- <button class="btn food-menu-btn">Order Now</button> -->
                 </div>
 
                 <div class="wrapper">
@@ -487,7 +488,7 @@
 
                   <div class="badge">-10%</div>
 
-                  <button class="btn food-menu-btn">Order Now</button>
+            
                 </div>
 
                 <div class="wrapper">
@@ -565,7 +566,7 @@
 
                   <div class="badge">-20%</div>
 
-                  <button class="btn food-menu-btn">Order Now</button>
+                  <!-- <button class="btn food-menu-btn">Order Now</button> -->
                 </div>
 
                 <div class="wrapper">
@@ -642,8 +643,9 @@
                     alt="Wendy's Chicken" class="w-100">
 
                   <div class="badge">-15%</div>
+                  
+                  <!-- <button class="btn food-menu-btn" onclick="window.open('https://wa.me/2348092848216?text=Hello%20I%20would%20like%20to%20book%20a%20table', '_blank')">Order Now</button> -->
 
-                  <button class="btn food-menu-btn">Order Now</button>
                 </div>
 
                 <div class="wrapper">
@@ -702,7 +704,7 @@
               that celebrates culinary history with every bite!
             </p>
 
-            <button class="btn btn-hover">Order Now</button>
+            <button class="btn btn-hover" onclick="window.open('https://wa.me/2348092848216?text=Hello%20I%20would%20like%20to%20book%20a%20table', '_blank')">Order Now</button>
           </div>
 
           <figure class="cta-banner">
@@ -720,18 +722,18 @@
 
 
 
-      <!-- 
+      <!-- <!-- 
         - #DELIVERY
       -->
 
-      <section class="section section-divider gray delivery">
+      <!-- <section class="section section-divider gray delivery">
         <div class="container">
 
           <div class="delivery-content">
 
             <h2 class="h2 section-title">
               Perfectly Timed Moments, <span class="span"> Delivered Right</span> to You
-            </h2>
+            </h2> -->
 
             <!-- <p class="section-text">
               The restaurants in Hangzhou also catered to many northern Chinese who had fled south from Kaifeng during
@@ -740,7 +742,7 @@
             </p> -->
 
             <!-- <button class="btn btn-hover">Order Now</button> -->
-          </div>
+          <!-- </div>
 
           <figure class="delivery-banner">
             <img src="./assets/images/delivery-banner-bg.png" width="700" height="602" loading="lazy" alt="clouds"
@@ -751,10 +753,10 @@
           </figure>
 
         </div>
-      </section>
+      </section> -->
 
 
-
+ -->
 
 
       <!-- 
@@ -1170,28 +1172,31 @@
           <ul class="social-list">
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.facebook.com/profile.php?id=61554963189427" class="social-link" target="_blank" rel="noopener noreferrer">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
+              
+              
+              
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#" class="social-link">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
-            </li>
+            </li> -->
 
             <li>
-              <a href="#" class="social-link">
+              <a href="https://www.instagram.com/rachie_creatives/" class="social-link" target="_blank" rel="noopener noreferrer">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#" class="social-link">
                 <ion-icon name="logo-pinterest"></ion-icon>
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -1237,39 +1242,33 @@
 
         </ul>
 
-        <form action="" class="footer-form">
+        <form action="javascript:void(0);" class="footer-form" onsubmit="redirectToWhatsAppBusiness()">
 
           <p class="footer-list-title">Book a Table</p>
-
+        
           <div class="input-wrapper">
-
-            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
-              class="input-field">
-
-            <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
-              class="input-field">
-
+            <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name" class="input-field" id="full_name">
+            <input type="email" name="email_address" required placeholder="Email" aria-label="Email" class="input-field" id="email_address">
           </div>
-
+        
           <div class="input-wrapper">
-
-            <select name="total_person" aria-label="Total person" class="input-field">
-              <option value="person">Person</option>
-              <option value="2 person">2 Person</option>
-              <option value="3 person">3 Person</option>
-              <option value="4 person">4 Person</option>
-              <option value="5 person">5 Person</option>
+            <select name="total_person" aria-label="Total person" class="input-field" id="total_person">
+              <option value="1">1 Person</option>
+              <option value="2">2 Persons</option>
+              <option value="3">3 Persons</option>
+              <option value="4">4 Persons</option>
+              <option value="5">5 Persons</option>
             </select>
-
-            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
-
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field" id="booking_date">
           </div>
-
-          <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
-
-          <button type="submit" class="btn" onclick="book" id="book">Book a Table</button>
-
+        
+          <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field" id="message"></textarea>
+        
+          <button type="submit" class="btn">Book a Table</button>
+        
         </form>
+        
+        
 
       </div>
     </div>
